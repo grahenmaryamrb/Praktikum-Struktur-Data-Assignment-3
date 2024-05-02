@@ -3,7 +3,7 @@
 <p align="center">2311110062</p>
 
 ## Dasar Teori
-Algoritma adalah kumpulan langkah sistematis untuk memperoleh hasil yang diinginkan. Sebelum sebuah algoritma dijalankan, biasanya ada suatu kondisi awal (initial state) yang harus dipenuhi. Kemudian, langkah-langkah ini diproses hingga mencapai suatu kondisi akhir (final state). Sorting didefinisikan sebagai pengurutan sejumlah data berdasarkan nilai kunci tertentu. Pengurutan dapat dilakukan dari nilai terkecil ke nilai terbesar (ascending) atau sebaliknya (descending) [1]. Dalam pertemuan kali ini, kita akan membahas tiga algoritma sorting, yaitu buble sort, selection sort, dan insertion sort.
+Algoritma adalah kumpulan langkah sistematis untuk memperoleh hasil yang diinginkan. Sebelum sebuah algoritma dijalankan, biasanya ada suatu kondisi awal (initial state) yang harus dipenuhi. Kemudian, langkah-langkah ini diproses hingga mencapai suatu kondisi akhir. Sorting didefinisikan sebagai pengurutan sejumlah data berdasarkan nilai kunci tertentu. Pengurutan dapat dilakukan dari nilai terkecil ke nilai terbesar (ascending) atau sebaliknya [1]. Dalam pertemuan kali ini, kita akan membahas tiga algoritma sorting, yaitu buble sort, selection sort, dan insertion sort.
 
 ### 1. BUBLE SORTING
 Algoritma Bubble  Sort adalah  salah  satu  dari  beberapa  jenis  sorting  yang digunakan untuk  mengurutkan  data. Cara  kerja  algoritma  ini  adalah  mengulang  proses, melakukan  perbandingan antara setiap elemen array dan melakukan penggantian posisi jika urutannya sudah benar. Perbandingan setiap elemen dari array ini berlanjut berjalan sampai kondisi yang ditentukan terpenuhi [2].
@@ -33,7 +33,7 @@ void buble_sort(int arr[], int length){
 ```
 
 ### 2. SELECTION SORTING
-Algoritma selection sort adalah salah satu algoritma pengurutan sederhana yang beroperasi dengan cara memilih elemen terkecil dari daftar dan menukarnya dengan elemen pertama. Kemudian, ia akan  memilih  elemen  terkecil  dari  sisa  daftar  dan  menukarnya  dengan  elemen  kedua,  dan seterusnya, hingga seluruh daftar terurut [3].
+Algoritma selection sort adalah salah satu algoritma pengurutan sederhana yang beroperasi dengan cara memilih elemen terkecil dari daftar dan menukarnya dengan elemen pertama. Kemudian, ia akan  memilih  elemen  terkecil  dari  sisa  daftar  dan  menukarnya  dengan  elemen  kedua,  dan seterusnya, hingga seluruh daftar terurut [2].
 
 Contoh prosedur selection sort dalam bahasa C++
 ```C++
@@ -58,7 +58,7 @@ void SelectSort(arr[], int n){
 ```
 
 ### 3. INSERTION SORTING
-Algoritma insertion sort disebut-sebut sebagai metode pertengahan. Artinya, metode ini memiliki kecepatan rata-rata antara metode primitif (bubble dan selection) dan modern (merge dan quick). Metode ini, didasarkan pada sebuah kunci yang diambil pada elemen ke-2  pada sebuah larik, lalu menyisipkan elemen tersebut jika kondisi percabangan terpenuhi. Metode penyisipan (insertion) bertujuan untuk menjadikan bagian sisi kiri larik terurutkan sampai dengan seluruh larik berhasil diurutkan [4].
+Algoritma insertion sort disebut-sebut sebagai metode pertengahan. Artinya, metode ini memiliki kecepatan rata-rata antara metode primitif (bubble dan selection) dan modern (merge dan quick). Metode ini, didasarkan pada sebuah kunci yang diambil pada elemen ke-2  pada sebuah larik, lalu menyisipkan elemen tersebut jika kondisi percabangan terpenuhi. Metode penyisipan (insertion) bertujuan untuk menjadikan bagian sisi kiri larik terurutkan sampai dengan seluruh larik berhasil diurutkan [2].
 
 Contoh prosedur insertion sort dalam bahasa C++
 ```C++
@@ -243,16 +243,13 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (516)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/270a1aaf-04dc-41fe-b456-f46b7bab2297)
+![Screenshot 2024-05-02 221215](https://github.com/grahenmaryamrb/Praktikum-Struktur-Data-Assignment-3/assets/168741067/e369af9c-d83c-408f-9910-5fd08cf5b98f)
 ### Penjelasan
 Program di atas merupakan program untuk mengurutkan Indeks Prestasi Semester mahasiwa kelas S1 IF 2016 G dari yang terbesar hingga terkecil dengan menggunakan algoritma Selection Sort. 
 
 Program dimulai dengan mendefinisikan fungsi 'selection_sort_descending' yang mengandung parameter 'arr' yang akan diurutkan dan integer 'n' sebagai jumlah elemen dalam array. Di dalam fungsi tersebut, terdapat dua perulangan: 'for' loop pertama digunakan untuk iterasi melalui setiap elemen array, kecuali elemen terakhir. 'for' loop kedua digunakan untuk mencari nilai maksimum di dalam array, dimulai dari indeks setelah elemen saat ini hingga elemen terakhir. Jika nilai elemen yang sedang dicek lebih besar dari nilai elemen maksimum yang sudah ditentukan sebelumnya (arr[current_item] > arr[current_max]), maka nilai current_max diupdate dengan indeks elemen tersebut. Jika nilai maksimum tidak berada pada posisi elemen saat ini (current_max != i), maka nilai elemen pada posisi current_max dan i ditukar.
 
 Terakhir, mendefinisikan fungsi 'main' yang di dalamnya terdapat sebuah array dengan 5 elemen float diinisialisasikan. Kemudian memanggil fungsi 'selection_sort_descending' untuk mengurutkan IPS mahasiswa secara descending.
-
-### Full Code Screenshot
-![unguided1](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/3cf0a41e-dde0-4dd5-a96c-03e9165acd63)
 
 ### 2. Pak RT memiliki 10 warga dengan nama: siti, situ, sana, ana, ani, caca, cici, dida, dodo, dan dadi. Supaya mudah dalam melakukan pencarian, Pak RT akan mengurutkan nama-nama tersebut sesuai dengan alfabet. Buatlah program untuk membantu Pak RT dengan menggunakan algoritma Bubble Sort! (Score: 30)
 
@@ -300,7 +297,7 @@ void buble_sort(string arr[], int length){
     }
 ```
 #### Output:
-![Screenshot (517)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/7adfdd05-5b85-451a-913d-b298009047ac)
+![Screenshot 2024-05-02 221345](https://github.com/grahenmaryamrb/Praktikum-Struktur-Data-Assignment-3/assets/168741067/ee14a017-b176-4f40-9232-2c3c1eb10342)
 ### Penjelasan
 Program diatas merupakan program yang dirancang untuk mengurutkan nama-nama 10 warga sesuai alfabet menggunakan algoritma buble sort.
 
@@ -309,9 +306,6 @@ Program dimulai dengan memanggil library iostream untuk I/O dan library 'string'
 Lanjut membuat fungsi 'print_array' yang mengandung parameter 'a' untuk menyimpan array dan 'length' untuk panjang array yang nantinya digunakan untuk menampilkan array.
 
 Terakhir, membuat fungsi 'main' untuk memanggil fungsi-fungsi sebelumnya termasuk mengurutkan nama-nama warga sesuai alfabet dengan algoritma buble sort.
-
-### Full Code Screenshot
-![unguided2](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/e8bcf756-e10b-447b-b310-e19a39d849d6)
 
 ### 3. Buatlah program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending)! (Score: 40)
 
@@ -395,16 +389,13 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (519)](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/1b278bfc-f7b3-4ae3-8db6-793c8295b8e9)
+![Screenshot 2024-05-02 221418](https://github.com/grahenmaryamrb/Praktikum-Struktur-Data-Assignment-3/assets/168741067/a8a5a35d-76f4-4bd3-9d3d-524ca61b8b94)
 ### Penjelasan
 Program diatas merupakan program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending) dengan menggunakan aloritma insertion sort.
 
 Program dimulai dengan memanggil library iostream untuk I/O. Selanjutnya, membuat dua fungsi, yaitu fungsi 'insertion_sort_ascending' untuk mengurutkan array secara ascending (kecil ke besar) dan fungsi 'insertion_sort_descending' untuk mengurutkan array secara descending (besar ke kecil) dengan masing-masing memiliki parameter 'arr' bertipe data char dan 'length' bertipe data integer. 
 
 Kemudian, membuat fungsi 'print_array' untuk menampilkan isi array 'a' dengan panjang 'length'. Dan terakhir, membuat fungsi utama 'main' untuk meminta user memasukkan jumlah karakter, memasukkan karakter-karakter tersebut, memanggil fungsi-fungsi sebelumnya untuk mengurutkan secara ascending maupun descending.
-
-### Full Code Screenshot
-![unguided3](https://github.com/HimamBashiran/Praktikum-Struktur-Data-Assignment/assets/142086470/6aef00f1-0d2b-4b16-8511-60170149085e)
 
 ## Kesimpulan
 #### Hasil praktikum: 
@@ -417,7 +408,3 @@ Sorting adalah proses pengurutan atau penyusunan data dalam suatu urutan tertent
 [1] Wahyu Fahmy Wisudawan, “Kompleksitas Algoritma Sorting yang Populer Dipakai”, 2008.
 
 [2] Muhammad Farhan Abdullah, Isna Hafiza, Rama Wahyuni, Adrian Syahputra, “Penggunaan Algoritma Bubble Sortdalam Pengurutan Nomor Induk Mahasiswa”, 2023.
-
-[3] Nanang Mahrozi, Muhammad Faisal, "ANALISIS PERBANDINGAN KECEPATAN ALGORITMA SELECTION SORTDANBUBBLE SORT", 2023.
-
-[4] Arief Hendra Saptadi, Desi Windi Sari, "ANALISIS ALGORITMA INSERTION SORT, MERGE SORT DAN IMPLEMENTASINYA DALAM BAHASA PEMROGRAMAN C++", 2012.
